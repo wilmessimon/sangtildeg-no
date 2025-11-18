@@ -1,59 +1,67 @@
 'use client';
 
-import { usePathname, useRouter } from 'next/navigation';
 import { useLocale } from 'next-intl';
+import { useRouter, usePathname } from 'next/navigation';
+import { useTransition } from 'react';
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
+  const [isPending, startTransition] = useTransition();
 
-  const switchLocale = (newLocale: string) => {
-    // Handle locale switching with 'as-needed' prefix strategy
-    // Default locale (no) has no prefix, en has /en prefix
+  const switchLocale = (newLocale: 'en' | 'no') => {
+    if (locale === newLocale) return;
     
-    if (newLocale === 'no') {
-      // Switching to Norwegian (default locale, no prefix)
+    console.log('=== Language Switch ===');
+    console.log('Current:', locale, 'Target:', newLocale, 'Path:', pathname);
+    
+    startTransition(() => {
+      // Create the new path based on target locale
+      let newPath = pathname;
+      
+      // Remove current locale prefix if it exists
       if (pathname.startsWith('/en')) {
-        // Remove /en prefix
-        const newPath = pathname.replace(/^\/en/, '') || '/';
-        router.push(newPath);
+        newPath = pathname.substring(3) || '/';
       }
-      // Already on Norwegian
-    } else if (newLocale === 'en') {
-      // Switching to English
-      if (!pathname.startsWith('/en')) {
-        // Add /en prefix
-        const newPath = pathname === '/' ? '/en' : `/en${pathname}`;
-        router.push(newPath);
+      
+      // Add new locale prefix if needed (only for 'en', 'no' is default)
+      if (newLocale === 'en') {
+        newPath = `/en${newPath}`;
       }
-      // Already on English
-    }
+      
+      console.log('Navigating to:', newPath);
+      
+      // Replace current history entry with new locale
+      router.replace(newPath);
+    });
   };
 
   return (
     <div className="flex gap-2 font-sans text-base md:text-lg">
       <button
         onClick={() => switchLocale('en')}
-        className={`px-4 py-2 rounded-full transition-colors ${
+        disabled={isLoading || isPending}
+        className={`px-4 py-2 rounded-full transition-all ${
           locale === 'en' 
             ? 'bg-accent-gold text-text-primary font-semibold' 
             : 'text-text-secondary hover:text-text-primary font-medium'
-        }`}
+        } ${(isLoading || isPending) ? 'opacity-50 cursor-wait' : ''}`}
         aria-label="Switch to English"
       >
-        EN
+        {isLoading && locale !== 'en' ? '...' : 'EN'}
       </button>
       <button
         onClick={() => switchLocale('no')}
-        className={`px-4 py-2 rounded-full transition-colors ${
+        disabled={isLoading || isPending}
+        className={`px-4 py-2 rounded-full transition-all ${
           locale === 'no' 
             ? 'bg-accent-gold text-text-primary font-semibold' 
             : 'text-text-secondary hover:text-text-primary font-medium'
-        }`}
+        } ${(isLoading || isPending) ? 'opacity-50 cursor-wait' : ''}`}
         aria-label="Bytt til norsk"
       >
-        NO
+        {isLoading && locale !== 'no' ? '...' : 'NO'}
       </button>
     </div>
   );
