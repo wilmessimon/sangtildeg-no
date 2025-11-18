@@ -1,11 +1,20 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Lazy initialization - only create connection when needed
+function getResend() {
+  if (!process.env.RESEND_API_KEY) {
+    throw new Error('Resend API key is missing. Please set RESEND_API_KEY environment variable.');
+  }
+  return new Resend(process.env.RESEND_API_KEY);
+}
 
 export async function sendNotificationEmail(data: any) {
   try {
+    const resend = getResend();
+    const fromEmail = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev';
+    
     await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL!,
+      from: fromEmail,
       to: 'hello@sangtildeg.no',
       subject: `New Song Request: ${data.name}`,
       html: `

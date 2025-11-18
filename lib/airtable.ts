@@ -1,10 +1,17 @@
 import Airtable from 'airtable';
 
-const base = new Airtable({
-  apiKey: process.env.AIRTABLE_API_KEY
-}).base(process.env.AIRTABLE_BASE_ID!);
+// Lazy initialization - only create connection when needed
+function getTable() {
+  if (!process.env.AIRTABLE_API_KEY || !process.env.AIRTABLE_BASE_ID || !process.env.AIRTABLE_TABLE_NAME) {
+    throw new Error('Airtable configuration is missing. Please set AIRTABLE_API_KEY, AIRTABLE_BASE_ID, and AIRTABLE_TABLE_NAME environment variables.');
+  }
 
-const table = base(process.env.AIRTABLE_TABLE_NAME!);
+  const base = new Airtable({
+    apiKey: process.env.AIRTABLE_API_KEY
+  }).base(process.env.AIRTABLE_BASE_ID);
+
+  return base(process.env.AIRTABLE_TABLE_NAME);
+}
 
 export interface FormSubmission {
   name: string;
@@ -24,6 +31,7 @@ export interface FormSubmission {
 
 export async function createSubmission(data: FormSubmission) {
   try {
+    const table = getTable();
     const record = await table.create([
       {
         fields: {
