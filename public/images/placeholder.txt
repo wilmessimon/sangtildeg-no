@@ -1,0 +1,5 @@
+Add your images here:
+- hero-main.jpg (2400x1350px)
+- thea-mia.jpg (1200x1600px)
+- og-image.jpg (1200x630px)
+

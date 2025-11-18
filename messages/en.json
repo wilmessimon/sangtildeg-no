@@ -1,0 +1,234 @@
+{
+  "hero": {
+    "headline": "A song to remember. A song for them.",
+    "subheadline": "Created with care – for a goodbye that truly feels like you.",
+    "tagline": "Every person has a story. We turn it into a song.",
+    "cta": "Create your song",
+    "ctaAlt": "Listen to an example first →"
+  },
+  "whatWeDo": {
+    "headline": "What we do",
+    "body": "We make personal remembrance songs for funerals and memorials – based on your memories.\n\nFamilies fill out a short questionnaire about the person who has passed.\n\nFrom that, we (Thea & Mia) create a deeply personal song that tells their story – in a gentle, emotional and lasting way.",
+    "quote": "This song made the whole ceremony feel like them."
+  },
+  "whyASong": {
+    "headline": "Why a song?",
+    "reason1": "A song brings people together.",
+    "reason2": "A song tells a story beyond words.",
+    "reason3": "A song stays – even when someone is gone.",
+    "audioHeader": "Listen to an example",
+    "audioNote": "Song based on a real story – anonymized with permission"
+  },
+  "aboutUs": {
+    "headline": "Meet Thea & Mia",
+    "body": "We are two friends, both psychology students with a deep love for music and people.\n\nThea has sung and played piano at many funerals.\nMia has a background in voice and storytelling.\n\nTogether, we create something that is both comforting and personal: a song for someone who meant the world to you.",
+    "signature": "with love,\nThea & Mia"
+  },
+  "howItWorks": {
+    "headline": "How it works",
+    "step1": {
+      "title": "Fill out the form",
+      "description": "Share some memories, words or thoughts about the person."
+    },
+    "step2": {
+      "title": "We create the song",
+      "description": "We shape those into a personal remembrance song."
+    },
+    "step3": {
+      "title": "You receive it",
+      "description": "We'll send it as a digital file you can keep, play, or share."
+    },
+    "step4": {
+      "title": "Pay what feels right",
+      "description": "If it touched you, you're welcome to support us. If not, that's okay."
+    },
+    "cta": "Create your song",
+    "ctaAlt": "Or contact us first: hello@sangtildeg.no"
+  },
+  "form": {
+    "headline": "Share your story",
+    "intro": "Take a moment to tell us about the person you want to honor. There are no wrong answers – just honest memories.",
+    "fields": {
+      "name": {
+        "label": "What was their name?",
+        "placeholder": "Enter name"
+      },
+      "about": {
+        "label": "Can you share a few words about who they were?",
+        "placeholder": "A loving mother, a curious soul, someone who loved the sea..."
+      },
+      "personality": {
+        "label": "What made them unique?",
+        "placeholder": "Their humor, their stubbornness, the way they lit up a room..."
+      },
+      "favorites": {
+        "label": "What did they love?",
+        "placeholder": "Music, gardening, Sunday dinners, old jazz records..."
+      },
+      "saying": {
+        "label": "Did they have a favorite phrase or saying?",
+        "placeholder": "Enter phrase"
+      },
+      "memory": {
+        "label": "Is there a memory you'd like to keep alive?",
+        "placeholder": "Share a memory..."
+      },
+      "tone": {
+        "label": "What feeling should the song have?",
+        "options": {
+          "gentle": "Gentle and comforting",
+          "warm": "Warm and celebratory",
+          "reflective": "Reflective and peaceful",
+          "other": "Something else"
+        }
+      },
+      "musicStyle": {
+        "label": "Any musical style you'd like us to consider?",
+        "placeholder": "Folk, classical, soft pop, something acoustic..."
+      },
+      "contactName": {
+        "label": "Your name",
+        "placeholder": "Enter your name"
+      },
+      "email": {
+        "label": "Email address",
+        "placeholder": "your@email.com"
+      },
+      "phone": {
+        "label": "Phone (optional)",
+        "placeholder": "+47 xxx xx xxx"
+      },
+      "additional": {
+        "label": "Anything else you'd like us to know?",
+        "placeholder": "Additional thoughts..."
+      }
+    },
+    "submit": "Submit",
+    "submitting": "Sending...",
+    "success": "Thank you for sharing this with us. We'll create something beautiful. You'll hear from us within 3-5 days.",
+    "error": "Something went wrong. Please email us directly at hello@sangtildeg.no"
+  },
+  "support": {
+    "headline": "Support us",
+    "body": "We love what we do – and we're grateful if it moves you too.\n\nIf the song touches you, you can support us with an amount that feels right to you.\n\nIf not, that's okay too.\nThe song is yours either way.",
+    "cta": "Support our work",
+    "note": "Your support helps us keep writing songs for others who grieve. Thank you for being part of this."
+  },
+  "footer": {
+    "headline": "Any questions?",
+    "contact": "Reach out to us directly:",
+    "quote": "A goodbye doesn't have to be silent.\nLet it be a song.",
+    "copyright": "© 2025 sangtildeg.no · Made with love in Oslo"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "howItWorks": "How it works",
+    "createSong": "Create song",
+    "contact": "Contact"
+  },
+  "createForm": {
+    "title": "Your personal remembrance song",
+    "subtitle": "Takes about 5 minutes",
+    "backHome": "Back to home",
+    "next": "Next",
+    "back": "Back",
+    "submit": "Submit",
+    "submitting": "Sending...",
+    "step1": {
+      "title": "Who do you want to honor?",
+      "subtitle": "Let's start with the basics",
+      "nameLabel": "What is or was their name?",
+      "namePlaceholder": "John",
+      "wordsLabel": "Which 3 words describe them best?",
+      "wordsPlaceholder": "Kind, funny, thoughtful"
+    },
+    "step2": {
+      "title": "Their story",
+      "subtitle": "Here you can share everything that feels important",
+      "label": "Tell us about this person",
+      "placeholder": "You can write about:\n\n• A special moment you shared together\n• What they loved most in life\n• What made them special\n• Values, dreams, or what carried them through life\n• Anything else that feels important\n\nDon't be afraid to write freely – everything helps us create the perfect song.",
+      "hint": "The more personal, the more unique the song becomes. But don't worry – even with little info, we create something beautiful."
+    },
+    "step3": {
+      "title": "The song",
+      "mustHaveLabel": "Anything that must be in the song?",
+      "mustHavePlaceholder": "A place, a quote, a feeling...",
+      "moodLabel": "What mood do you want?",
+      "moods": {
+        "gentle": "Gentle & sad",
+        "warm": "Warm & hopeful",
+        "narrative": "Personal & storytelling",
+        "surprise": "Just surprise me"
+      }
+    },
+    "step4": {
+      "title": "Anything else?",
+      "subtitle": "This step is optional",
+      "label": "Would you like to add anything else?",
+      "placeholder": "Anything that comes to mind can help...",
+      "skip": "Skip this step →"
+    },
+    "step5": {
+      "title": "Final step",
+      "subtitle": "So we can send you the song",
+      "nameLabel": "Your name",
+      "namePlaceholder": "Enter your name",
+      "emailLabel": "Your email",
+      "emailPlaceholder": "your@email.com",
+      "phoneLabel": "Phone (optional)",
+      "phonePlaceholder": "+47 xxx xx xxx"
+    },
+    "success": {
+      "title": "Thank you for sharing this with us 💛",
+      "message": "We'll create something beautiful. You'll hear from us within 3-5 days."
+    },
+    "error": "Something went wrong. Please email us directly at hello@sangtildeg.no"
+  },
+  "faq": {
+    "headline": "Frequently Asked Questions",
+    "q1": {
+      "question": "What exactly do you do?",
+      "answer": "We write personal, individual songs in memory of a loved one. Based on a short questionnaire, we create a song that reflects the person's life, personality and story – for the funeral or as a lasting memory."
+    },
+    "q2": {
+      "question": "Who is behind \"Sang til deg\"?",
+      "answer": "We are Thea and Mia – two psychology students with a musical background. Thea is also a pianist and has experience with funerals. Our motivation is to create modern, emotional and personal ways of saying goodbye."
+    },
+    "q3": {
+      "question": "How does it work?",
+      "answer": "You fill out our short questionnaire. From that, we compose and write a unique song. You receive the recording digitally and can play it at the funeral or simply keep it for yourself."
+    },
+    "q4": {
+      "question": "How long does it take until I receive the song?",
+      "answer": "Usually we need 2-3 days, depending on the volume of requests. If it's particularly urgent, we'll find a solution – just write to us."
+    },
+    "q5": {
+      "question": "How much does it cost?",
+      "answer": "We believe in trust, appreciation and fairness. You pay what the song is worth to you. We do this out of conviction – and we're happy if you support us."
+    },
+    "q6": {
+      "question": "In what form do I receive the song?",
+      "answer": "You receive a high-quality audio recording (e.g. as an MP3 file), optionally also the lyrics."
+    },
+    "q7": {
+      "question": "Can I express wishes – e.g. music style or certain words?",
+      "answer": "Of course! You're welcome to indicate in the questionnaire if you have specific wishes or ideas. We'll try to implement it as best as possible."
+    },
+    "q8": {
+      "question": "Who is the song intended for?",
+      "answer": "For everyone who wants to say goodbye in a personal way – whether as a family, group of friends or individual."
+    },
+    "q9": {
+      "question": "What happens to my information?",
+      "answer": "Your answers remain confidential. We only use them for the song and treat them with the utmost respect."
+    },
+    "q10": {
+      "question": "Can I contact you in advance?",
+      "answer": "Of course. Write to us anytime – we're here for you."
+    },
+    "contactHeadline": "Still have questions?",
+    "contactText": "We're here for you. Write to us anytime:"
+  }
+}
+

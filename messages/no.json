@@ -1,0 +1,234 @@
+{
+  "hero": {
+    "headline": "En sang å huske. En sang for dem.",
+    "subheadline": "Skapt med omsorg – for et farvel som virkelig føles som dere.",
+    "tagline": "Hvert menneske har en historie. Vi gjør den om til en sang.",
+    "cta": "Lag sangen",
+    "ctaAlt": "Hør et eksempel først →"
+  },
+  "whatWeDo": {
+    "headline": "Hva vi gjør",
+    "body": "Vi lager personlige minnesanger for begravelser og seremonier – basert på deres minner.\n\nFamilier fyller ut et kort spørreskjema om personen som har gått bort.\n\nFra det skaper vi (Thea & Mia) en dypt personlig sang som forteller deres historie – på en mild, følelsesladet og varig måte.",
+    "quote": "Denne sangen fikk hele seremonien til å føles som dem."
+  },
+  "whyASong": {
+    "headline": "Hvorfor en sang?",
+    "reason1": "En sang bringer mennesker sammen.",
+    "reason2": "En sang forteller en historie utover ord.",
+    "reason3": "En sang blir – selv når noen er borte.",
+    "audioHeader": "Hør et eksempel",
+    "audioNote": "Sang basert på en ekte historie – anonymisert med tillatelse"
+  },
+  "aboutUs": {
+    "headline": "Møt Thea & Mia",
+    "body": "Vi er to venner, begge psykologistudenter med en dyp kjærlighet til musikk og mennesker.\n\nThea har sunget og spilt piano på mange begravelser.\nMia har bakgrunn innen stemme og historiefortelling.\n\nSammen skaper vi noe som er både trøstende og personlig: en sang for noen som betydde alt for deg.",
+    "signature": "med kjærlighet,\nThea & Mia"
+  },
+  "howItWorks": {
+    "headline": "Slik fungerer det",
+    "step1": {
+      "title": "Fyll ut skjemaet",
+      "description": "Del noen minner, ord eller tanker om personen."
+    },
+    "step2": {
+      "title": "Vi skaper sangen",
+      "description": "Vi former disse til en personlig minnesang."
+    },
+    "step3": {
+      "title": "Du mottar den",
+      "description": "Vi sender den som en digital fil du kan beholde, spille eller dele."
+    },
+    "step4": {
+      "title": "Betal hva som føles riktig",
+      "description": "Hvis den rørte deg, er du velkommen til å støtte oss. Hvis ikke, er det greit."
+    },
+    "cta": "Lag sangen",
+    "ctaAlt": "Eller kontakt oss først: hello@sangtildeg.no"
+  },
+  "form": {
+    "headline": "Del historien din",
+    "intro": "Ta deg tid til å fortelle oss om personen du vil hedre. Det finnes ingen gale svar – bare ærlige minner.",
+    "fields": {
+      "name": {
+        "label": "Hva het de?",
+        "placeholder": "Skriv navn"
+      },
+      "about": {
+        "label": "Kan du dele noen ord om hvem de var?",
+        "placeholder": "En kjærlig mor, en nysgjerrig sjel, noen som elsket havet..."
+      },
+      "personality": {
+        "label": "Hva gjorde dem unike?",
+        "placeholder": "Deres humor, deres stolthet, måten de lyste opp et rom..."
+      },
+      "favorites": {
+        "label": "Hva elsket de?",
+        "placeholder": "Musikk, hagearbeid, søndagsmiddager, gamle jazzplater..."
+      },
+      "saying": {
+        "label": "Hadde de et favorittuttrykk eller ordtak?",
+        "placeholder": "Skriv uttrykk"
+      },
+      "memory": {
+        "label": "Er det et minne du vil holde i live?",
+        "placeholder": "Del et minne..."
+      },
+      "tone": {
+        "label": "Hvilken følelse skal sangen ha?",
+        "options": {
+          "gentle": "Mild og trøstende",
+          "warm": "Varm og feststemmende",
+          "reflective": "Reflekterende og fredelig",
+          "other": "Noe annet"
+        }
+      },
+      "musicStyle": {
+        "label": "Noen musikalsk stil du vil vi skal vurdere?",
+        "placeholder": "Folk, klassisk, soft pop, noe akustisk..."
+      },
+      "contactName": {
+        "label": "Ditt navn",
+        "placeholder": "Skriv ditt navn"
+      },
+      "email": {
+        "label": "E-postadresse",
+        "placeholder": "din@epost.no"
+      },
+      "phone": {
+        "label": "Telefon (valgfritt)",
+        "placeholder": "+47 xxx xx xxx"
+      },
+      "additional": {
+        "label": "Noe annet du vil vi skal vite?",
+        "placeholder": "Ytterligere tanker..."
+      }
+    },
+    "submit": "Send inn",
+    "submitting": "Sender...",
+    "success": "Takk for at du delte dette med oss. Vi skal lage noe vakkert. Du hører fra oss innen 3-5 dager.",
+    "error": "Noe gikk galt. Send oss en e-post direkte på hello@sangtildeg.no"
+  },
+  "support": {
+    "headline": "Støtt oss",
+    "body": "Vi elsker det vi gjør – og vi er takknemlige hvis det berører deg også.\n\nHvis sangen berører deg, kan du støtte oss med et beløp som føles riktig for deg.\n\nHvis ikke, er det også greit.\nSangen er din uansett.",
+    "cta": "Støtt arbeidet vårt",
+    "note": "Din støtte hjelper oss å fortsette å skrive sanger for andre som sørger. Takk for at du er en del av dette."
+  },
+  "footer": {
+    "headline": "Noen spørsmål?",
+    "contact": "Ta kontakt med oss direkte:",
+    "quote": "Et farvel trenger ikke være stille.\nLa det være en sang.",
+    "copyright": "© 2025 sangtildeg.no · Laget med kjærlighet i Oslo"
+  },
+  "nav": {
+    "home": "Hjem",
+    "about": "Om oss",
+    "howItWorks": "Slik fungerer det",
+    "createSong": "Lag sang",
+    "contact": "Kontakt"
+  },
+  "createForm": {
+    "title": "Din personlige erinningssang",
+    "subtitle": "Dauert ca. 5 minutter",
+    "backHome": "Tilbake til hjemmesiden",
+    "next": "Neste",
+    "back": "Tilbake",
+    "submit": "Send inn",
+    "submitting": "Sender...",
+    "step1": {
+      "title": "Hvem vil du hedre?",
+      "subtitle": "Vi starter med det grunnleggende",
+      "nameLabel": "Hva heter eller het personen?",
+      "namePlaceholder": "Ola",
+      "wordsLabel": "Hvilke 3 ord beskriver dem best?",
+      "wordsPlaceholder": "Snill, morsom, omtenksom"
+    },
+    "step2": {
+      "title": "Historien deres",
+      "subtitle": "Her kan du dele alt som føles viktig",
+      "label": "Fortell oss om denne personen",
+      "placeholder": "Du kan skrive om:\n\n• Et spesielt øyeblikk dere delte sammen\n• Hva de elsket mest i livet\n• Hva som gjorde dem spesielle\n• Verdier, drømmer eller det som bar dem gjennom livet\n• Noe annet som føles viktig\n\nIkke vær redd for å skrive fritt – alt hjelper oss å skape den perfekte sangen.",
+      "hint": "Jo mer personlig, jo mer unik blir sangen. Men bekymre deg ikke – selv med lite info skaper vi noe vakkert."
+    },
+    "step3": {
+      "title": "Sangen",
+      "mustHaveLabel": "Noe som må være med i sangen?",
+      "mustHavePlaceholder": "Et sted, et sitat, en følelse...",
+      "moodLabel": "Hvilken stemning ønsker du?",
+      "moods": {
+        "gentle": "Sanft & traurig",
+        "warm": "Warm & hoffnungsvoll",
+        "narrative": "Persönlich & erzählend",
+        "surprise": "Überrasch mich einfach"
+      }
+    },
+    "step4": {
+      "title": "Noe mer?",
+      "subtitle": "Dette trinnet er valgfritt",
+      "label": "Vil du legge til noe mer?",
+      "placeholder": "Alt som faller deg inn kan hjelpe...",
+      "skip": "Hopp over dette trinnet →"
+    },
+    "step5": {
+      "title": "Siste trinn",
+      "subtitle": "Slik at vi kan sende deg sangen",
+      "nameLabel": "Ditt navn",
+      "namePlaceholder": "Skriv ditt navn",
+      "emailLabel": "Din e-post",
+      "emailPlaceholder": "din@epost.no",
+      "phoneLabel": "Telefon (valgfritt)",
+      "phonePlaceholder": "+47 xxx xx xxx"
+    },
+    "success": {
+      "title": "Takk for at du delte dette med oss 💛",
+      "message": "Vi skal lage noe vakkert. Du hører fra oss innen 3-5 dager."
+    },
+    "error": "Noe gikk galt. Send oss en e-post direkte på hello@sangtildeg.no"
+  },
+  "faq": {
+    "headline": "Ofte stilte spørsmål",
+    "q1": {
+      "question": "Hva gjør dere egentlig?",
+      "answer": "Vi skriver personlige, individuelle sanger til minne om en kjær person. Basert på et kort spørreskjema lager vi en sang som gjenspeiler livet, personligheten og historien til personen – for begravelsen eller som et varig minne."
+    },
+    "q2": {
+      "question": "Hvem står bak «Sang til deg»?",
+      "answer": "Vi er Thea og Mia – to psykologistudenter med musikalsk bakgrunn. Thea er også pianist og har erfaring med begravelser. Vår motivasjon er å skape moderne, emosjonelle og personlige måter å ta farvel på."
+    },
+    "q3": {
+      "question": "Hvordan fungerer det?",
+      "answer": "Du fyller ut vårt korte spørreskjema. Derfra komponerer og skriver vi en unik sang. Du mottar opptaket digitalt og kan spille det på begravelsen eller bare beholde det for deg selv."
+    },
+    "q4": {
+      "question": "Hvor lang tid tar det før jeg får sangen?",
+      "answer": "Som regel trenger vi 2-3 dager, avhengig av mengden forespørsler. Hvis det haster særlig, finner vi en løsning – bare skriv til oss."
+    },
+    "q5": {
+      "question": "Hva koster det?",
+      "answer": "Vi tror på tillit, verdsettelse og rettferdighet. Du betaler det sangen er verdt for deg. Vi gjør dette av overbevisning – og vi setter pris på om du støtter oss."
+    },
+    "q6": {
+      "question": "I hvilken form får jeg sangen?",
+      "answer": "Du mottar et høykvalitets lydopptak (f.eks. som MP3-fil), eventuelt også sangteksten."
+    },
+    "q7": {
+      "question": "Kan jeg komme med ønsker – f.eks. musikkstil eller bestemte ord?",
+      "answer": "Selvfølgelig! Du kan gjerne angi i spørreskjemaet om du har spesielle ønsker eller ideer. Vi prøver å gjennomføre det best mulig."
+    },
+    "q8": {
+      "question": "Hvem er sangen ment for?",
+      "answer": "For alle som ønsker å ta farvel på en personlig måte – enten som familie, vennegruppe eller enkeltperson."
+    },
+    "q9": {
+      "question": "Hva skjer med mine opplysninger?",
+      "answer": "Dine svar forblir konfidensielle. Vi bruker dem kun til sangen og behandler dem med største respekt."
+    },
+    "q10": {
+      "question": "Kan jeg kontakte dere på forhånd?",
+      "answer": "Selvfølgelig. Skriv til oss når som helst – vi er her for deg."
+    },
+    "contactHeadline": "Fortsatt spørsmål?",
+    "contactText": "Vi er her for deg. Skriv til oss når som helst:"
+  }
+}
+

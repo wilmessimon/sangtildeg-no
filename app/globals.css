@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream text-text-primary font-serif;
+  }
+  
+  /* Größere, lesbarere Text-Defaults */
+  p {
+    @apply leading-relaxed;
+  }
+  
+  h1 {
+    @apply leading-tight;
+  }
+  
+  h2 {
+    @apply leading-tight;
+  }
+  
+  h3 {
+    @apply leading-snug;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F1E8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4C5B0;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF7A;
+}
+
+/* Section padding - mehr Luft */
+.section {
+  @apply py-20 md:py-28 lg:py-36;
+}
+
+/* Container - schmaler und besser zentriert */
+.container {
+  @apply max-w-6xl mx-auto px-6 sm:px-8 lg:px-12;
+}
+
+/* Button styles - größer und besser sichtbar */
+.btn-primary {
+  @apply bg-accent-gold text-text-primary px-10 py-4 rounded-full font-sans font-semibold text-lg md:text-xl transition-all duration-300 hover:bg-warm hover:border-accent-gold hover:shadow-xl hover:-translate-y-1 border-2 border-transparent;
+}
+
+.btn-secondary {
+  @apply bg-transparent text-text-primary px-8 py-3.5 rounded-full font-sans font-medium text-base md:text-lg border-2 border-warm transition-all duration-300 hover:bg-warm;
+}
+
+/* Handwriting text - größer und emotionaler */
+.handwriting {
+  @apply font-handwriting text-3xl md:text-4xl leading-relaxed;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Fade animation for step transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-in forwards;
+}
+
+/* Stagger animation delays */
+.animate-delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animate-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.animate-delay-400 {
+  animation-delay: 0.4s;
+}
+
