@@ -21,14 +21,37 @@ export default function AudioPlayer({ src, title }: AudioPlayerProps) {
     soundRef.current = new Howl({
       src: [src],
       html5: true,
-      onplay: () => setIsPlaying(true),
-      onpause: () => setIsPlaying(false),
+      format: ['mp3', 'wav', 'm4a'],
+      onplay: () => {
+        console.log('Audio started playing');
+        setIsPlaying(true);
+      },
+      onpause: () => {
+        console.log('Audio paused');
+        setIsPlaying(false);
+      },
       onload: () => {
         if (soundRef.current) {
-          setDuration(soundRef.current.duration());
+          const dur = soundRef.current.duration();
+          console.log('Audio loaded, duration:', dur);
+          setDuration(dur);
+        }
+      },
+      onloaderror: (id, error) => {
+        console.error('Error loading audio:', error);
+        alert('Fehler beim Laden der Audio-Datei. Bitte überprüfen Sie den Pfad.');
+      },
+      onplayerror: (id, error) => {
+        console.error('Error playing audio:', error);
+        // Try to unlock audio on user interaction
+        if (soundRef.current) {
+          soundRef.current.once('unlock', () => {
+            soundRef.current?.play();
+          });
         }
       },
       onend: () => {
+        console.log('Audio ended');
         setIsPlaying(false);
         setProgress(0);
         setCurrentTime(0);
@@ -52,11 +75,17 @@ export default function AudioPlayer({ src, title }: AudioPlayerProps) {
 
   const togglePlay = () => {
     if (soundRef.current) {
+      console.log('Toggle play clicked, current state:', isPlaying);
+      console.log('Sound ref state:', soundRef.current.state());
+      
       if (isPlaying) {
         soundRef.current.pause();
       } else {
-        soundRef.current.play();
+        const playPromise = soundRef.current.play();
+        console.log('Play called, promise:', playPromise);
       }
+    } else {
+      console.error('Sound ref is null');
     }
   };
 
