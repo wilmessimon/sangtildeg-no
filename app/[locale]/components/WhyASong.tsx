@@ -47,10 +47,9 @@ export default function WhyASong() {
               {t('audioHeader')}
             </h3>
             
-            {/* Placeholder for audio - replace with actual audio file */}
             <AudioPlayer 
-              src="/audio/example-song.mp3" 
-              title="Example Song"
+              src="/audio/til-eva-example.mp3" 
+              title="Til Eva"
             />
             
             <p className="text-base md:text-lg text-text-light text-center mt-6 italic">
