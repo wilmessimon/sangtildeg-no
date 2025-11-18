@@ -1,66 +1,38 @@
 'use client';
 
 import { useLocale } from 'next-intl';
-import { useRouter, usePathname } from 'next/navigation';
-import { useTransition } from 'react';
+import { Link, usePathname } from '@/i18n/routing';
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
-  const router = useRouter();
   const pathname = usePathname();
-  const [isPending, startTransition] = useTransition();
-
-  const switchLocale = (newLocale: 'en' | 'no') => {
-    if (locale === newLocale) return;
-    
-    console.log('=== Language Switch ===');
-    console.log('Current:', locale, 'Target:', newLocale, 'Path:', pathname);
-    
-    // Create the new path based on target locale
-    let newPath = pathname;
-    
-    // Remove current locale prefix if it exists
-    if (pathname.startsWith('/en')) {
-      newPath = pathname.substring(3) || '/';
-    }
-    
-    // Add new locale prefix if needed (only for 'en', 'no' is default)
-    if (newLocale === 'en') {
-      newPath = `/en${newPath}`;
-    }
-    
-    console.log('Navigating to:', newPath);
-    
-    // Use hard navigation with full URL to ensure proper reload
-    window.location.href = window.location.origin + newPath;
-  };
 
   return (
     <div className="flex gap-2 font-sans text-base md:text-lg">
-      <button
-        onClick={() => switchLocale('en')}
-        disabled={isPending}
+      <Link
+        href={pathname}
+        locale="en"
         className={`px-4 py-2 rounded-full transition-all ${
           locale === 'en' 
             ? 'bg-accent-gold text-text-primary font-semibold' 
             : 'text-text-secondary hover:text-text-primary font-medium'
-        } ${isPending ? 'opacity-50 cursor-wait' : ''}`}
+        }`}
         aria-label="Switch to English"
       >
         EN
-      </button>
-      <button
-        onClick={() => switchLocale('no')}
-        disabled={isPending}
+      </Link>
+      <Link
+        href={pathname}
+        locale="no"
         className={`px-4 py-2 rounded-full transition-all ${
           locale === 'no' 
             ? 'bg-accent-gold text-text-primary font-semibold' 
             : 'text-text-secondary hover:text-text-primary font-medium'
-        } ${isPending ? 'opacity-50 cursor-wait' : ''}`}
+        }`}
         aria-label="Bytt til norsk"
       >
         NO
-      </button>
+      </Link>
     </div>
   );
 }
