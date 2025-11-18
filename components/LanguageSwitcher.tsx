@@ -16,52 +16,50 @@ export default function LanguageSwitcher() {
     console.log('=== Language Switch ===');
     console.log('Current:', locale, 'Target:', newLocale, 'Path:', pathname);
     
-    startTransition(() => {
-      // Create the new path based on target locale
-      let newPath = pathname;
-      
-      // Remove current locale prefix if it exists
-      if (pathname.startsWith('/en')) {
-        newPath = pathname.substring(3) || '/';
-      }
-      
-      // Add new locale prefix if needed (only for 'en', 'no' is default)
-      if (newLocale === 'en') {
-        newPath = `/en${newPath}`;
-      }
-      
-      console.log('Navigating to:', newPath);
-      
-      // Replace current history entry with new locale
-      router.replace(newPath);
-    });
+    // Create the new path based on target locale
+    let newPath = pathname;
+    
+    // Remove current locale prefix if it exists
+    if (pathname.startsWith('/en')) {
+      newPath = pathname.substring(3) || '/';
+    }
+    
+    // Add new locale prefix if needed (only for 'en', 'no' is default)
+    if (newLocale === 'en') {
+      newPath = `/en${newPath}`;
+    }
+    
+    console.log('Navigating to:', newPath);
+    
+    // Use hard navigation with full URL to ensure proper reload
+    window.location.href = window.location.origin + newPath;
   };
 
   return (
     <div className="flex gap-2 font-sans text-base md:text-lg">
       <button
         onClick={() => switchLocale('en')}
-        disabled={isLoading || isPending}
+        disabled={isPending}
         className={`px-4 py-2 rounded-full transition-all ${
           locale === 'en' 
             ? 'bg-accent-gold text-text-primary font-semibold' 
             : 'text-text-secondary hover:text-text-primary font-medium'
-        } ${(isLoading || isPending) ? 'opacity-50 cursor-wait' : ''}`}
+        } ${isPending ? 'opacity-50 cursor-wait' : ''}`}
         aria-label="Switch to English"
       >
-        {isLoading && locale !== 'en' ? '...' : 'EN'}
+        EN
       </button>
       <button
         onClick={() => switchLocale('no')}
-        disabled={isLoading || isPending}
+        disabled={isPending}
         className={`px-4 py-2 rounded-full transition-all ${
           locale === 'no' 
             ? 'bg-accent-gold text-text-primary font-semibold' 
             : 'text-text-secondary hover:text-text-primary font-medium'
-        } ${(isLoading || isPending) ? 'opacity-50 cursor-wait' : ''}`}
+        } ${isPending ? 'opacity-50 cursor-wait' : ''}`}
         aria-label="Bytt til norsk"
       >
-        {isLoading && locale !== 'no' ? '...' : 'NO'}
+        NO
       </button>
     </div>
   );
