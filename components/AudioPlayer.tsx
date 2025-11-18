@@ -181,11 +181,6 @@ export default function AudioPlayer({ src, title }: AudioPlayerProps) {
           />
         </div>
         
-        {/* Percentage Display */}
-        <span className="text-sm md:text-base font-medium text-text-secondary min-w-[45px] text-right">
-          {Math.round(progress)}%
-        </span>
-        
         {/* Volume Icon */}
         <Volume2 size={24} className="text-text-secondary" />
       </div>
