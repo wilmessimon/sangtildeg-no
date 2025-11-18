@@ -16,11 +16,19 @@ export default function AudioPlayer({ src, title }: AudioPlayerProps) {
   const [duration, setDuration] = useState(0);
   const soundRef = useRef<Howl | null>(null);
   const progressBarRef = useRef<HTMLDivElement>(null);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
+    // Cleanup previous instance if exists
+    if (soundRef.current) {
+      soundRef.current.unload();
+    }
+
+    // Create new Howl instance
     soundRef.current = new Howl({
       src: [src],
       html5: true,
+      preload: true,
       format: ['mp3', 'wav', 'm4a'],
       onplay: () => {
         console.log('Audio started playing');
@@ -39,7 +47,6 @@ export default function AudioPlayer({ src, title }: AudioPlayerProps) {
       },
       onloaderror: (id, error) => {
         console.error('Error loading audio:', error);
-        alert('Fehler beim Laden der Audio-Datei. Bitte überprüfen Sie den Pfad.');
       },
       onplayerror: (id, error) => {
         console.error('Error playing audio:', error);
@@ -58,20 +65,45 @@ export default function AudioPlayer({ src, title }: AudioPlayerProps) {
       },
     });
 
-    const interval = setInterval(() => {
-      if (soundRef.current && isPlaying) {
-        const seek = soundRef.current.seek() as number;
-        const dur = soundRef.current.duration();
-        setCurrentTime(seek);
-        setProgress((seek / dur) * 100);
+    // Cleanup function
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
       }
-    }, 100);
+      if (soundRef.current) {
+        soundRef.current.stop();
+        soundRef.current.unload();
+        soundRef.current = null;
+      }
+    };
+  }, [src]);
+
+  // Separate effect for progress tracking
+  useEffect(() => {
+    if (isPlaying) {
+      intervalRef.current = setInterval(() => {
+        if (soundRef.current) {
+          const seek = soundRef.current.seek() as number;
+          const dur = soundRef.current.duration();
+          if (dur > 0) {
+            setCurrentTime(seek);
+            setProgress((seek / dur) * 100);
+          }
+        }
+      }, 100);
+    } else {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    }
 
     return () => {
-      clearInterval(interval);
-      soundRef.current?.unload();
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
     };
-  }, [src, isPlaying]);
+  }, [isPlaying]);
 
   const togglePlay = () => {
     if (soundRef.current) {
