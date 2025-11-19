@@ -86,7 +86,7 @@ AIRTABLE_API_KEY=           # From airtable.com/create/tokens
 AIRTABLE_BASE_ID=           # From your Airtable base URL
 AIRTABLE_TABLE_NAME=        # Usually "Submissions"
 RESEND_API_KEY=             # From resend.com
-RESEND_FROM_EMAIL=          # hello@sangtildeg.no
+RESEND_FROM_EMAIL=          # sangtildeg@gmail.com
 NEXT_PUBLIC_VIPPS_LINK=     # Vipps payment/QR link
 ```
 
@@ -206,7 +206,7 @@ No code changes needed for text updates!
 ### Emails not sending?
 - Verify Resend API key
 - Check `RESEND_FROM_EMAIL` is correct
-- Emails go to `hello@sangtildeg.no` by default
+- Emails go to `sangtildeg@gmail.com` by default
 
 ### i18n not working?
 - Ensure middleware.ts is in root directory
@@ -215,7 +215,7 @@ No code changes needed for text updates!
 
 ## 📧 Support
 
-Questions? Contact hello@sangtildeg.no
+Questions? Contact sangtildeg@gmail.com
 
 ---
 
