@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="container relative">
         <div className="max-w-5xl mx-auto text-center relative z-10">
           {/* Headline - größer und prominenter */}
-          <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-text-primary mb-8 leading-tight animate-fade-in-up">
+          <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-text-primary mb-8 leading-tight animate-fade-in-up whitespace-pre-line">
             {t('headline')}
           </h1>
 
