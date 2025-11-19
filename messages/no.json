@@ -229,6 +229,13 @@
     },
     "contactHeadline": "Fortsatt spørsmål?",
     "contactText": "Vi er her for deg. Skriv til oss når som helst:"
+  },
+  "validation": {
+    "nameRequired": "Vennligst skriv inn et navn",
+    "threeWordsRequired": "Vennligst beskriv personen",
+    "storyRequired": "Vennligst fortell oss litt mer",
+    "contactNameRequired": "Ditt navn er påkrevd",
+    "emailRequired": "Vennligst oppgi en gyldig e-postadresse"
   }
 }
 

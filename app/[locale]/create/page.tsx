@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
@@ -9,36 +9,37 @@ import { z } from 'zod';
 import { ArrowLeft, ArrowRight, Loader2, Check } from 'lucide-react';
 import ProgressBar from '@/components/ProgressBar';
 
-// Form Schema
-const createFormSchema = z.object({
-  // Step 1
-  name: z.string().min(1, 'Bitte gib einen Namen ein'),
-  threeWords: z.string().min(3, 'Bitte beschreibe die Person'),
-  // Step 2
-  story: z.string().min(20, 'Bitte erzähle uns ein bisschen mehr'),
-  // Step 3
-  mustHave: z.string().optional(),
-  mood: z.enum(['gentle', 'warm', 'narrative', 'surprise']),
-  // Step 4
-  additional: z.string().optional(),
-  // Step 5
-  contactName: z.string().min(1, 'Dein Name wird benötigt'),
-  email: z.string().email('Bitte gib eine gültige E-Mail an'),
-  phone: z.string().optional(),
-  language: z.enum(['en', 'no']),
-});
-
-type FormData = z.infer<typeof createFormSchema>;
-
 const TOTAL_STEPS = 5;
 
 export default function CreatePage() {
   const t = useTranslations('createForm');
+  const tValidation = useTranslations('validation');
   const locale = useLocale();
   const router = useRouter();
   const [currentStep, setCurrentStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+
+  // Form Schema with translated messages
+  const createFormSchema = useMemo(() => z.object({
+    // Step 1
+    name: z.string().min(1, tValidation('nameRequired')),
+    threeWords: z.string().min(3, tValidation('threeWordsRequired')),
+    // Step 2
+    story: z.string().min(20, tValidation('storyRequired')),
+    // Step 3
+    mustHave: z.string().optional(),
+    mood: z.enum(['gentle', 'warm', 'narrative', 'surprise']),
+    // Step 4
+    additional: z.string().optional(),
+    // Step 5
+    contactName: z.string().min(1, tValidation('contactNameRequired')),
+    email: z.string().email(tValidation('emailRequired')),
+    phone: z.string().optional(),
+    language: z.enum(['en', 'no']),
+  }), [tValidation]);
+
+  type FormData = z.infer<typeof createFormSchema>;
 
   const {
     register,

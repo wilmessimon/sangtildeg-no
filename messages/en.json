@@ -229,6 +229,13 @@
     },
     "contactHeadline": "Still have questions?",
     "contactText": "We're here for you. Write to us anytime:"
+  },
+  "validation": {
+    "nameRequired": "Please enter a name",
+    "threeWordsRequired": "Please describe the person",
+    "storyRequired": "Please tell us a bit more",
+    "contactNameRequired": "Your name is required",
+    "emailRequired": "Please enter a valid email address"
   }
 }
 
