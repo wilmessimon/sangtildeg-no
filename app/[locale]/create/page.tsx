@@ -133,12 +133,14 @@ export default function CreatePage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name: data.name,
-          about: `${data.threeWords}\n\n${data.story}`,
-          tone: data.mood,
-          additional: data.mustHave ? `Must have: ${data.mustHave}\n\n${data.additional || ''}` : data.additional,
+          threeWords: data.threeWords,
+          story: data.story,
+          mustHave: data.mustHave || '',
+          mood: data.mood,
+          additional: data.additional || '',
           contactName: data.contactName,
           email: data.email,
-          phone: data.phone,
+          phone: data.phone || '',
           language: data.language,
         }),
       });

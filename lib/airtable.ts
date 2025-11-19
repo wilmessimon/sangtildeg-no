@@ -15,17 +15,14 @@ function getTable() {
 
 export interface FormSubmission {
   name: string;
-  about: string;
-  personality?: string;
-  favorites?: string;
-  saying?: string;
-  memory?: string;
-  tone: string;
-  musicStyle?: string;
+  threeWords: string;
+  story: string;
+  mustHave?: string;
+  mood: 'gentle' | 'warm' | 'narrative' | 'surprise';
+  additional?: string;
   contactName: string;
   email: string;
   phone?: string;
-  additional?: string;
   language: 'en' | 'no';
 }
 
@@ -36,20 +33,17 @@ export async function createSubmission(data: FormSubmission) {
       {
         fields: {
           Name: data.name,
-          About: data.about,
-          Personality: data.personality || '',
-          Favorites: data.favorites || '',
-          Saying: data.saying || '',
-          Memory: data.memory || '',
-          Tone: data.tone,
-          'Music Style': data.musicStyle || '',
-          'Contact Name': data.contactName,
-          Email: data.email,
-          Phone: data.phone || '',
-          Additional: data.additional || '',
-          Language: data.language,
-          'Submitted At': new Date().toISOString(),
-          Status: 'New',
+          threeWords: data.threeWords,
+          story: data.story,
+          mustHave: data.mustHave || '',
+          mood: data.mood,
+          additional: data.additional || '',
+          contactName: data.contactName,
+          email: data.email,
+          phone: data.phone || '',
+          language: data.language,
+          submittedAt: new Date().toISOString(),
+          status: 'new',
         },
       },
     ]);
