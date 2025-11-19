@@ -1,28 +1,28 @@
 {
   "hero": {
-    "headline": "En sang å huske. En sang for dem.",
-    "subheadline": "Skapt med omsorg – for et farvel som virkelig føles som dere.",
+    "headline": "Et minne du kan lytte til",
+    "subheadline": "Vi skaper personlige minnesanger – skrevet og komponert spesielt for den som har gått bort.",
     "tagline": "Hvert menneske har en historie. Vi gjør den om til en sang.",
-    "cta": "Lag sangen",
+    "cta": "Lag din sang",
     "ctaAlt": "Hør et eksempel først →"
   },
   "whatWeDo": {
-    "headline": "Hva vi gjør",
-    "body": "Vi lager personlige minnesanger for begravelser og seremonier – basert på deres minner.\n\nFamilier fyller ut et kort spørreskjema om personen som har gått bort.\n\nFra det skaper vi (Thea & Mia) en dypt personlig sang som forteller deres historie – på en mild, følelsesladet og varig måte.",
-    "quote": "Denne sangen fikk hele seremonien til å føles som dem."
+    "headline": "Om oss",
+    "body": "Vi har begge opplevd hvordan en personlig sang kan gjøre en sorgprosess litt mykere, litt varmere, og litt nærere. Gjennom årene har vi skrevet slike sanger for familie og venner, og dermed sett hvordan musikk kan skape en helt egen atmosfære når den gjenspeiler et liv som har vært levd.\n\n En minnesang kan fortelle en historie, bære et minne og gi rom for følelser som ikke alltid lar seg uttrykke i ord alene. Denne erfaringen og vissheten om musikkens kraft er grunnen til at vi ønsker å lage slike sanger også for dere.\n\n Fra det skaper vi en personlig sang som forteller deres historie – på en mild, følelsesladet og varig måte.",
+    "quote": "Et farvel trenger ikke være stille. La det være en sang."
   },
   "whyASong": {
     "headline": "Hvorfor en sang?",
-    "reason1": "En sang bringer mennesker sammen.",
+    "reason1": "En sang blir – selv når noen er borte.",
     "reason2": "En sang forteller en historie utover ord.",
-    "reason3": "En sang blir – selv når noen er borte.",
+    "reason3": "En sang bringer mennesker sammen.",
     "audioHeader": "Hør et eksempel",
     "audioNote": "Sang basert på en ekte historie – anonymisert med tillatelse"
   },
   "aboutUs": {
     "headline": "Møt Thea & Mia",
-    "body": "Vi er to venner, begge psykologistudenter med en dyp kjærlighet til musikk og mennesker.\n\nThea har sunget og spilt piano på mange begravelser.\nMia har bakgrunn innen stemme og historiefortelling.\n\nSammen skaper vi noe som er både trøstende og personlig: en sang for noen som betydde alt for deg.",
-    "signature": "med kjærlighet,\nThea & Mia"
+    "body": "Vi er to venner, begge psykologistudenter med kjærlighet for musikk og mennesker.\n\nVi har erfaring med sang og musikk i bisettelser og andre personlige arrangementer. \n\nSammen skaper vi noe som er både trøstende og personlig: en sang for den du savner.",
+    "signature": "Varme hilsner,\nThea & Mia"
   },
   "howItWorks": {
     "headline": "Slik fungerer det",
@@ -42,8 +42,8 @@
       "title": "Betal hva som føles riktig",
       "description": "Hvis den rørte deg, er du velkommen til å støtte oss. Hvis ikke, er det greit."
     },
-    "cta": "Lag sangen",
-    "ctaAlt": "Eller kontakt oss først: hello@sangtildeg.no"
+    "cta": "Bestill din sang",
+    "ctaAlt": "Eller kontakt oss først: post@sangtildeg.no"
   },
   "form": {
     "headline": "Del historien din",
@@ -129,7 +129,7 @@
   },
   "createForm": {
     "title": "Din personlige erinningssang",
-    "subtitle": "Dauert ca. 5 minutter",
+    "subtitle": "Omtrent 5 minutter gjenstår",
     "backHome": "Tilbake til hjemmesiden",
     "next": "Neste",
     "back": "Tilbake",
@@ -138,7 +138,7 @@
     "step1": {
       "title": "Hvem vil du hedre?",
       "subtitle": "Vi starter med det grunnleggende",
-      "nameLabel": "Hva heter eller het personen?",
+      "nameLabel": "Hva het personen?",
       "namePlaceholder": "Ola",
       "wordsLabel": "Hvilke 3 ord beskriver dem best?",
       "wordsPlaceholder": "Snill, morsom, omtenksom"
@@ -148,7 +148,7 @@
       "subtitle": "Her kan du dele alt som føles viktig",
       "label": "Fortell oss om denne personen",
       "placeholder": "Du kan skrive om:\n\n• Et spesielt øyeblikk dere delte sammen\n• Hva de elsket mest i livet\n• Hva som gjorde dem spesielle\n• Verdier, drømmer eller det som bar dem gjennom livet\n• Noe annet som føles viktig\n\nIkke vær redd for å skrive fritt – alt hjelper oss å skape den perfekte sangen.",
-      "hint": "Jo mer personlig, jo mer unik blir sangen. Men bekymre deg ikke – selv med lite info skaper vi noe vakkert."
+      "hint": "Jo mer personlig, jo mer unik blir sangen. Ikke vær redd for å skrive fritt – alt hjelper oss å skape den perfekte sangen."
     },
     "step3": {
       "title": "Sangen",
@@ -156,10 +156,10 @@
       "mustHavePlaceholder": "Et sted, et sitat, en følelse...",
       "moodLabel": "Hvilken stemning ønsker du?",
       "moods": {
-        "gentle": "Sanft & traurig",
-        "warm": "Warm & hoffnungsvoll",
-        "narrative": "Persönlich & erzählend",
-        "surprise": "Überrasch mich einfach"
+        "gentle": "Mild & trist",
+        "warm": "Varm & håpefull",
+        "narrative": "Personlig & fortellende",
+        "surprise": "Overrask meg"
       }
     },
     "step4": {
@@ -181,35 +181,35 @@
     },
     "success": {
       "title": "Takk for at du delte dette med oss 💛",
-      "message": "Vi skal lage noe vakkert. Du hører fra oss innen 3-5 dager."
+      "message": "Vi skal lage noe vakkert. Du mottar sangen innen 2-3 dager."
     },
     "error": "Noe gikk galt. Send oss en e-post direkte på hello@sangtildeg.no"
   },
   "faq": {
     "headline": "Ofte stilte spørsmål",
     "q1": {
-      "question": "Hva gjør dere egentlig?",
+      "question": "Hva gjør dere?",
       "answer": "Vi skriver personlige, individuelle sanger til minne om en kjær person. Basert på et kort spørreskjema lager vi en sang som gjenspeiler livet, personligheten og historien til personen – for begravelsen eller som et varig minne."
     },
     "q2": {
       "question": "Hvem står bak «Sang til deg»?",
-      "answer": "Vi er Thea og Mia – to psykologistudenter med musikalsk bakgrunn. Thea er også pianist og har erfaring med begravelser. Vår motivasjon er å skape moderne, emosjonelle og personlige måter å ta farvel på."
+      "answer": "Vi er Thea og Mia – to psykologstudenter med musikalsk bakgrunn. Vår motivasjon er å skape en moderne, emosjonell og personlig måte å ta farvel på."
     },
     "q3": {
       "question": "Hvordan fungerer det?",
-      "answer": "Du fyller ut vårt korte spørreskjema. Derfra komponerer og skriver vi en unik sang. Du mottar opptaket digitalt og kan spille det på begravelsen eller bare beholde det for deg selv."
+      "answer": "Du fyller ut vårt korte spørreskjema. Derfra lager vi en unik, personlig tilpasset sang. Du mottar opptaket digitalt og kan spille det i begravelsen - eller beholde det for deg selv."
     },
     "q4": {
       "question": "Hvor lang tid tar det før jeg får sangen?",
-      "answer": "Som regel trenger vi 2-3 dager, avhengig av mengden forespørsler. Hvis det haster særlig, finner vi en løsning – bare skriv til oss."
+      "answer": "Prosessen 48-72 timer fra bestillingen sendes. Hvis det haster særlig, finner vi en løsning – bare skriv til oss."
     },
     "q5": {
       "question": "Hva koster det?",
-      "answer": "Vi tror på tillit, verdsettelse og rettferdighet. Du betaler det sangen er verdt for deg. Vi gjør dette av overbevisning – og vi setter pris på om du støtter oss."
+      "answer": "Vi tror på tillit, verdsettelse og rettferdighet. Du betaler det sangen er verdt for deg. All støtte settes pris på, og gjør det mulig for oss å fortsette prosjektet."
     },
     "q6": {
       "question": "I hvilken form får jeg sangen?",
-      "answer": "Du mottar et høykvalitets lydopptak (f.eks. som MP3-fil), eventuelt også sangteksten."
+      "answer": "Du mottar et lydopptak i høy kvalitet (i MP3-format). Dersom det er ønskelig sender vi også sangteksten."
     },
     "q7": {
       "question": "Kan jeg komme med ønsker – f.eks. musikkstil eller bestemte ord?",
@@ -217,7 +217,7 @@
     },
     "q8": {
       "question": "Hvem er sangen ment for?",
-      "answer": "For alle som ønsker å ta farvel på en personlig måte – enten som familie, vennegruppe eller enkeltperson."
+      "answer": "For alle som ønsker å ta farvel på en personlig måte – enten som familie, vennegruppe eller en enkeltperson."
     },
     "q9": {
       "question": "Hva skjer med mine opplysninger?",
