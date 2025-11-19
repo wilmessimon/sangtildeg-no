@@ -1,28 +1,28 @@
 {
   "hero": {
-    "headline": "A song to remember. A song for them.",
-    "subheadline": "Created with care – for a goodbye that truly feels like you.",
+    "headline": "A memory you\ncan listen to",
+    "subheadline": "We create personal remembrance songs – written and composed especially for the one who has passed.",
     "tagline": "Every person has a story. We turn it into a song.",
     "cta": "Create your song",
     "ctaAlt": "Listen to an example first →"
   },
   "whatWeDo": {
-    "headline": "What we do",
-    "body": "We make personal remembrance songs for funerals and memorials – based on your memories.\n\nFamilies fill out a short questionnaire about the person who has passed.\n\nFrom that, we (Thea & Mia) create a deeply personal song that tells their story – in a gentle, emotional and lasting way.",
-    "quote": "This song made the whole ceremony feel like them."
+    "headline": "About us",
+    "body": "We have both experienced how a personal song can make a grieving process a bit softer, a bit warmer, and a bit closer. Over the years, we have written such songs for family and friends, and thus seen how music can create a very special atmosphere when it reflects a life that has been lived.\n\n A remembrance song can tell a story, carry a memory and give space for feelings that cannot always be expressed in words alone. This experience and the certainty of music's power is why we want to create such songs for you too.\n\n From this, we create a personal song that tells their story – in a gentle, emotional and lasting way.",
+    "quote": "A goodbye doesn't have to be silent. Let it be a song."
   },
   "whyASong": {
     "headline": "Why a song?",
-    "reason1": "A song brings people together.",
+    "reason1": "A song stays – even when someone is gone.",
     "reason2": "A song tells a story beyond words.",
-    "reason3": "A song stays – even when someone is gone.",
+    "reason3": "A song brings people together.",
     "audioHeader": "Listen to an example",
     "audioNote": "Song based on a real story – anonymized with permission"
   },
   "aboutUs": {
     "headline": "Meet Thea & Mia",
-    "body": "We are two friends, both psychology students with a deep love for music and people.\n\nThea has sung and played piano at many funerals.\nMia has a background in voice and storytelling.\n\nTogether, we create something that is both comforting and personal: a song for someone who meant the world to you.",
-    "signature": "with love,\nThea & Mia"
+    "body": "We are two friends, both psychology students with a love for music and people.\n\nWe have experience with singing and music at funerals and other personal events. \n\nTogether, we create something that is both comforting and personal: a song for the one you miss.",
+    "signature": "Warm regards,\nThea & Mia"
   },
   "howItWorks": {
     "headline": "How it works",
@@ -42,7 +42,7 @@
       "title": "Pay what feels right",
       "description": "If it touched you, you're welcome to support us. If not, that's okay."
     },
-    "cta": "Create your song",
+    "cta": "Order your song",
     "ctaAlt": "Or contact us first: sangtildeg@gmail.com"
   },
   "form": {
@@ -138,7 +138,7 @@
     "step1": {
       "title": "Who do you want to honor?",
       "subtitle": "Let's start with the basics",
-      "nameLabel": "What is or was their name?",
+      "nameLabel": "What was their name?",
       "namePlaceholder": "John",
       "wordsLabel": "Which 3 words describe them best?",
       "wordsPlaceholder": "Kind, funny, thoughtful"
@@ -148,7 +148,7 @@
       "subtitle": "Here you can share everything that feels important",
       "label": "Tell us about this person",
       "placeholder": "You can write about:\n\n• A special moment you shared together\n• What they loved most in life\n• What made them special\n• Values, dreams, or what carried them through life\n• Anything else that feels important\n\nDon't be afraid to write freely – everything helps us create the perfect song.",
-      "hint": "The more personal, the more unique the song becomes. But don't worry – even with little info, we create something beautiful."
+      "hint": "The more personal, the more unique the song becomes. Don't be afraid to write freely – everything helps us create the perfect song."
     },
     "step3": {
       "title": "The song",
@@ -181,35 +181,35 @@
     },
     "success": {
       "title": "Thank you for sharing this with us 💛",
-      "message": "We'll create something beautiful. You'll hear from us within 3-5 days."
+      "message": "We'll create something beautiful. You'll receive the song within 2-3 days."
     },
     "error": "Something went wrong. Please email us directly at sangtildeg@gmail.com"
   },
   "faq": {
     "headline": "Frequently Asked Questions",
     "q1": {
-      "question": "What exactly do you do?",
+      "question": "What do you do?",
       "answer": "We write personal, individual songs in memory of a loved one. Based on a short questionnaire, we create a song that reflects the person's life, personality and story – for the funeral or as a lasting memory."
     },
     "q2": {
       "question": "Who is behind \"Sang til deg\"?",
-      "answer": "We are Thea and Mia – two psychology students with a musical background. Thea is also a pianist and has experience with funerals. Our motivation is to create modern, emotional and personal ways of saying goodbye."
+      "answer": "We are Thea and Mia – two psychology students with a musical background. Our motivation is to create a modern, emotional and personal way of saying goodbye."
     },
     "q3": {
       "question": "How does it work?",
-      "answer": "You fill out our short questionnaire. From that, we compose and write a unique song. You receive the recording digitally and can play it at the funeral or simply keep it for yourself."
+      "answer": "You fill out our short questionnaire. From that, we create a unique, personally tailored song. You receive the recording digitally and can play it at the funeral - or keep it for yourself."
     },
     "q4": {
       "question": "How long does it take until I receive the song?",
-      "answer": "Usually we need 2-3 days, depending on the volume of requests. If it's particularly urgent, we'll find a solution – just write to us."
+      "answer": "The process takes 48-72 hours from when the order is submitted. If it's particularly urgent, we'll find a solution – just write to us."
     },
     "q5": {
       "question": "How much does it cost?",
-      "answer": "We believe in trust, appreciation and fairness. You pay what the song is worth to you. We do this out of conviction – and we're happy if you support us."
+      "answer": "We believe in trust, appreciation and fairness. You pay what the song is worth to you. All support is appreciated, and makes it possible for us to continue the project."
     },
     "q6": {
       "question": "In what form do I receive the song?",
-      "answer": "You receive a high-quality audio recording (e.g. as an MP3 file), optionally also the lyrics."
+      "answer": "You receive a high-quality audio recording (in MP3 format). If desired, we also send the lyrics."
     },
     "q7": {
       "question": "Can I express wishes – e.g. music style or certain words?",
@@ -217,7 +217,7 @@
     },
     "q8": {
       "question": "Who is the song intended for?",
-      "answer": "For everyone who wants to say goodbye in a personal way – whether as a family, group of friends or individual."
+      "answer": "For everyone who wants to say goodbye in a personal way – whether as a family, group of friends or an individual."
     },
     "q9": {
       "question": "What happens to my information?",
