@@ -80,7 +80,7 @@ export default function Navigation() {
 
           {/* Mobile Menu - größer */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-6 border-t border-warm">
+          <div className="md:hidden py-6 border-t border-warm bg-cream shadow-lg">
             <div className="flex flex-col gap-6">
               <button 
                 onClick={() => scrollToSection('about')}
