@@ -48,7 +48,7 @@ export default function WhyASong() {
             </h3>
             
             <AudioPlayer 
-              src="/audio/til-eva-example.mp3" 
+              src="/audio/til-eva-thea-mia-example.mp3" 
               title="Til Eva"
             />
             
