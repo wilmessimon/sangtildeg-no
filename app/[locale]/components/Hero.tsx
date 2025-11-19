@@ -80,11 +80,6 @@ export default function Hero() {
               {t('ctaAlt')}
             </button>
           </div>
-
-          {/* Decorative element */}
-          <div className="mt-16 flex justify-center">
-            <div className="w-16 h-1 bg-accent-gold rounded-full" />
-          </div>
         </div>
       </div>
 
