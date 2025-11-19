@@ -20,6 +20,18 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Body scroll lock when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileMenuOpen]);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -30,7 +42,7 @@ export default function Navigation() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-cream/95 backdrop-blur-sm shadow-md' : 'bg-transparent'
+      isScrolled || isMobileMenuOpen ? 'bg-cream/95 backdrop-blur-sm shadow-md' : 'bg-transparent'
     }`}>
       <div className="container">
         <div className="flex items-center justify-between py-5 md:py-6">
@@ -80,8 +92,9 @@ export default function Navigation() {
 
           {/* Mobile Menu - größer */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-6 border-t border-warm bg-cream shadow-lg">
-            <div className="flex flex-col gap-6">
+          <div className="md:hidden animate-fade-in-down">
+            <div className="py-6 px-4 border-t border-warm/50">
+              <div className="flex flex-col gap-6">
               <button 
                 onClick={() => scrollToSection('about')}
                 className="text-left text-xl text-text-secondary hover:text-text-primary transition-colors font-semibold"
@@ -101,6 +114,7 @@ export default function Navigation() {
               >
                 {t('createSong')}
               </Link>
+              </div>
             </div>
           </div>
         )}
