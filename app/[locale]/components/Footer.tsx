@@ -19,11 +19,11 @@ export default function Footer() {
               {t('contact')}
             </p>
             <a 
-              href="mailto:hello@sangtildeg.no"
+              href="mailto:sangtildeg@gmail.com"
               className="inline-flex items-center gap-3 text-accent-gold hover:text-text-primary transition-colors font-medium text-xl md:text-2xl"
             >
               <Mail size={28} />
-              hello@sangtildeg.no
+              sangtildeg@gmail.com
             </a>
           </div>
 

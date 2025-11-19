@@ -15,7 +15,7 @@ export async function sendNotificationEmail(data: any) {
     
     await resend.emails.send({
       from: fromEmail,
-      to: 'hello@sangtildeg.no',
+      to: 'sangtildeg@gmail.com',
       subject: `New Song Request: ${data.name}`,
       html: `
         <h2>New Submission from ${data.contactName}</h2>

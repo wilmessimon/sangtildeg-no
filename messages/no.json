@@ -43,7 +43,7 @@
       "description": "Hvis den rørte deg, er du velkommen til å støtte oss. Hvis ikke, er det greit."
     },
     "cta": "Bestill din sang",
-    "ctaAlt": "Eller kontakt oss først: post@sangtildeg.no"
+    "ctaAlt": "Eller kontakt oss først: sangtildeg@gmail.com"
   },
   "form": {
     "headline": "Del historien din",
@@ -106,7 +106,7 @@
     "submit": "Send inn",
     "submitting": "Sender...",
     "success": "Takk for at du delte dette med oss. Vi skal lage noe vakkert. Du hører fra oss innen 3-5 dager.",
-    "error": "Noe gikk galt. Send oss en e-post direkte på hello@sangtildeg.no"
+    "error": "Noe gikk galt. Send oss en e-post direkte på sangtildeg@gmail.com"
   },
   "support": {
     "headline": "Støtt oss",
@@ -183,7 +183,7 @@
       "title": "Takk for at du delte dette med oss 💛",
       "message": "Vi skal lage noe vakkert. Du mottar sangen innen 2-3 dager."
     },
-    "error": "Noe gikk galt. Send oss en e-post direkte på hello@sangtildeg.no"
+    "error": "Noe gikk galt. Send oss en e-post direkte på sangtildeg@gmail.com"
   },
   "faq": {
     "headline": "Ofte stilte spørsmål",

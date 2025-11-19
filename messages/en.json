@@ -43,7 +43,7 @@
       "description": "If it touched you, you're welcome to support us. If not, that's okay."
     },
     "cta": "Create your song",
-    "ctaAlt": "Or contact us first: hello@sangtildeg.no"
+    "ctaAlt": "Or contact us first: post@sangtildeg.no"
   },
   "form": {
     "headline": "Share your story",
@@ -106,7 +106,7 @@
     "submit": "Submit",
     "submitting": "Sending...",
     "success": "Thank you for sharing this with us. We'll create something beautiful. You'll hear from us within 3-5 days.",
-    "error": "Something went wrong. Please email us directly at hello@sangtildeg.no"
+    "error": "Something went wrong. Please email us directly at sangtildeg@gmail.com"
   },
   "support": {
     "headline": "Support us",
@@ -183,7 +183,7 @@
       "title": "Thank you for sharing this with us 💛",
       "message": "We'll create something beautiful. You'll hear from us within 3-5 days."
     },
-    "error": "Something went wrong. Please email us directly at hello@sangtildeg.no"
+    "error": "Something went wrong. Please email us directly at sangtildeg@gmail.com"
   },
   "faq": {
     "headline": "Frequently Asked Questions",

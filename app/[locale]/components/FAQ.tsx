@@ -88,10 +88,10 @@ export default function FAQ() {
               {t('contactText')}
             </p>
             <a
-              href="mailto:hello@sangtildeg.no"
+              href="mailto:sangtildeg@gmail.com"
               className="inline-block text-2xl md:text-3xl font-semibold text-accent-gold hover:text-text-primary transition-colors"
             >
-              hello@sangtildeg.no
+              sangtildeg@gmail.com
             </a>
           </div>
         </div>
